@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# React Router Dog Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Welcome to my React Router Dog Finder project! As a beginner in the vast world of React development, I embarked on this journey to understand the core concepts of routing in React using `react-router-dom`. This project allowed me to grasp how URL parameters work, the importance of the `Switch` (or `Routes` in the latest React Router) component, different ways to implement redirects, and how to structure components for optimal routing and user experience.
 
-In the project directory, you can run:
+### Goals Achieved
 
-### `npm start`
+- **Working with Router URL Parameters:** I learned how to use URL parameters to show different information for each dog dynamically.
+- **Setting Up Routing:**  I got familiar with using Routes (replacing Switch in the latest React Router) to manage where each link takes you in the app.
+- **Managing Redirects:**  I explored how to automatically send users to the main dogs list if they type in a URL that doesn't exist in the app.
+- **Beginning to Test Routes:** I started learning about how to check if my routing components work correctly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Dog List View (`/dogs`):** Displays a list of all available dogs. Each dog has a name, image, and a link to view more details.
+- **Dog Details View (`/dogs/:name`):** Shows detailed information about each dog, including age, a list of fun facts, and an image.
+- **Redirects:** Any undefined routes are redirected to the Dog List View (`/dogs`).
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React:** For building the user interface.
+- **React Router DOM:** For managing routing in the application.
+- **CSS:** For styling components.
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `App.js`: The root component that renders the `Nav` and `AppRoutes` components.
+- `Routes.js`: Defines all the routes for the application.
+- `DogList.js`: Renders the list of all dogs.
+- `DogDetails.js`: Renders the details of a specific dog.
+- `Nav.js`: Contains the navigation bar for the application.
+- `styles.css`: Contains all the styling for the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Reflection
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As a beginner, this project was both challenging and rewarding. It gave me a hands-on experience with React Router and a deeper understanding of component-based architecture in React. I learned the importance of structuring the project efficiently and the power of routing in single-page applications.
 
-### `npm run eject`
+I hope you enjoy navigating through the Dog Finder app as much as I enjoyed building it!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
